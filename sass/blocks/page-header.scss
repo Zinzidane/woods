@@ -1,0 +1,24 @@
+.page-header {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__title {
+  @include visually-hidden;
+}
+
+@media #{$tablet-widths} {
+  .page-header {
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

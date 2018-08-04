@@ -1,0 +1,67 @@
+.about {
+  background-color: #f4f2f4;
+  background-image: url("../img/world-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about__wrapper {
+  @include container;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__title {
+  @include title;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.about__container {
+  margin-bottom: 20px;
+}
+
+.about__img-container {
+  position: relative;
+  height: 290px;
+}
+
+.about__img-top {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 90%;
+}
+
+@media #{$tablet-widths} {
+  .about {
+    background-size: contain;
+  }
+
+  .about__wrapper {
+    flex-direction: row;
+  }
+
+  .about__container {
+    padding-top: 20px;
+    width: 35%;
+  }
+
+  .about__img-container {
+    top: -80px;
+    width: 65%;
+    height: auto;
+  }
+
+  .about__img-top {
+    top: auto;
+    left: -20px;
+    bottom: 0;
+    width: 40%;
+  }
+}
+

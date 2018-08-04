@@ -1,0 +1,42 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+
+  @media #{$tablet-widths} {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  @media #{$desktop-widths} {
+    padding-right: 13%;
+    padding-left: 13%;
+    max-width: 1300px;
+  }
+}
+
+@mixin title {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  @media #{$tablet-widths} {
+    font-size: 24px;
+  }
+}
